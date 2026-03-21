@@ -1,0 +1,10 @@
+.map-view { width: 100%; height: 100%; border-radius: var(--radius-xl); overflow: hidden; position: relative; }
+.map-view__container { width: 100%; height: 100%; border-radius: var(--radius-xl); }
+.custom-marker { background: transparent !important; border: none !important; }
+.map-popup .leaflet-popup-content-wrapper { border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); padding: 0; }
+.map-popup .leaflet-popup-content { margin: 0; min-width: 200px; }
+.map-popup__content { padding: var(--space-4); display: flex; flex-direction: column; gap: var(--space-2); }
+.map-popup__title { font-weight: var(--font-weight-semibold); font-size: var(--font-size-sm); color: var(--color-text-primary); line-height: var(--line-height-tight); }
+.map-popup__address { font-size: var(--font-size-xs); color: var(--color-text-tertiary); }
+.map-popup__badges { display: flex; gap: var(--space-2); }
+.map-popup__type { font-size: 11px; font-weight: var(--font-weight-medium); color: var(--color-primary-light); background: var(--color-primary-bg); padding: 2px 8px; border-radius: var(--radius-sm); width: fit-content; }

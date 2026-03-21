@@ -1,0 +1,14 @@
+.confidence-badge {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 4px 10px; border-radius: var(--radius-full);
+  font-weight: var(--font-weight-semibold); letter-spacing: -0.01em;
+  transition: transform var(--transition-fast);
+}
+.confidence-badge:hover { transform: scale(1.04); }
+.confidence-badge--sm { font-size: 10.5px; padding: 3px 8px; }
+.confidence-badge--lg { font-size: var(--font-size-sm); padding: 5px 14px; }
+.confidence-badge__score { font-weight: var(--font-weight-bold); }
+.confidence-badge__label { opacity: 0.85; }
+.confidence--high { background: var(--color-success-light); color: var(--color-success); }
+.confidence--medium { background: var(--color-warning-light); color: var(--color-warning); }
+.confidence--low { background: var(--color-danger-light); color: var(--color-danger); }

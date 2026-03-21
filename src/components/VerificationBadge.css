@@ -1,0 +1,11 @@
+.verification-badge {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 4px 10px; border-radius: var(--radius-full);
+  font-size: 10.5px; font-weight: var(--font-weight-medium);
+  transition: transform var(--transition-fast);
+}
+.verification-badge:hover { transform: scale(1.04); }
+.verification-badge--lg { font-size: var(--font-size-sm); padding: 5px 14px; }
+.verification--verified { background: var(--color-success-light); color: var(--color-success); }
+.verification--warning { background: var(--color-warning-light); color: var(--color-warning); }
+.verification--review { background: rgba(255, 255, 255, 0.05); color: var(--color-text-secondary); }

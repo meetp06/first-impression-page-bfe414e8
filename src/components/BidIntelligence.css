@@ -1,0 +1,63 @@
+.bid-intel__empty { display: flex; flex-direction: column; align-items: center; gap: var(--space-3); padding: var(--space-8) var(--space-4); text-align: center; }
+.bid-intel__empty-icon { width: 56px; height: 56px; border-radius: var(--radius-xl); background: linear-gradient(135deg, rgba(16,185,129,0.15), rgba(59,130,246,0.15)); display: flex; align-items: center; justify-content: center; color: #10b981; }
+.bid-intel__empty h4 { font-size: var(--font-size-base); font-weight: var(--font-weight-semibold); color: var(--color-text-primary); margin: 0; }
+.bid-intel__empty p { font-size: var(--font-size-sm); color: var(--color-text-tertiary); max-width: 300px; line-height: var(--line-height-relaxed); }
+.bid-intel__powered { font-size: 11px; color: var(--color-text-tertiary); margin-top: var(--space-2); opacity: 0.6; }
+
+.bid-intel__loading { display: flex; flex-direction: column; align-items: center; gap: var(--space-3); padding: var(--space-8) var(--space-4); text-align: center; }
+.bid-intel__spinner { animation: spin 1s linear infinite; color: var(--color-primary-light); }
+.bid-intel__loading p { font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+.bid-intel__loading-steps { display: flex; flex-direction: column; gap: var(--space-1); }
+.bid-intel__loading-steps span { font-size: 12px; color: var(--color-text-tertiary); }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.bid-intel__error { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-6); color: var(--color-warning); text-align: center; }
+.bid-intel__error p { font-size: var(--font-size-sm); }
+
+.bid-intel { display: flex; flex-direction: column; gap: var(--space-4); }
+
+.bid-intel__range-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--space-2); }
+.bid-intel__range-card { display: flex; flex-direction: column; align-items: center; gap: var(--space-1); padding: var(--space-3); border-radius: var(--radius-lg); border: 1px solid var(--glass-border); background: rgba(255,255,255,0.03); }
+.bid-intel__range-card--low { border-color: rgba(59,130,246,0.2); }
+.bid-intel__range-card--low svg { color: #3b82f6; }
+.bid-intel__range-card--mid { border-color: rgba(16,185,129,0.3); background: rgba(16,185,129,0.06); }
+.bid-intel__range-card--mid svg { color: #10b981; }
+.bid-intel__range-card--high { border-color: rgba(245,158,11,0.2); }
+.bid-intel__range-card--high svg { color: #f59e0b; }
+.bid-intel__range-label { font-size: 11px; color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; font-weight: var(--font-weight-medium); }
+.bid-intel__range-value { font-size: var(--font-size-lg); font-weight: var(--font-weight-bold); color: var(--color-text-primary); }
+.bid-intel__range-value--primary { color: #10b981; font-size: var(--font-size-xl); }
+
+.bid-intel__confidence { display: flex; flex-direction: column; gap: var(--space-2); }
+.bid-intel__confidence-header { display: flex; align-items: center; gap: var(--space-2); font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+.bid-intel__confidence-score { margin-left: auto; font-weight: var(--font-weight-bold); color: var(--color-text-primary); }
+.bid-intel__confidence-track { height: 6px; background: rgba(255,255,255,0.06); border-radius: var(--radius-full); overflow: hidden; }
+.bid-intel__confidence-fill { height: 100%; border-radius: var(--radius-full); }
+
+.bid-intel__section { display: flex; flex-direction: column; gap: var(--space-2); }
+.bid-intel__section-title { font-size: var(--font-size-sm); font-weight: var(--font-weight-semibold); color: var(--color-text-primary); display: flex; align-items: center; gap: var(--space-2); }
+.bid-intel__section-title--warning { color: var(--color-warning); }
+.bid-intel__explanation { font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed); background: rgba(255,255,255,0.03); padding: var(--space-3); border-radius: var(--radius-md); border-left: 3px solid var(--color-primary); }
+
+.bid-intel__strategy-list { display: flex; flex-direction: column; gap: var(--space-2); }
+.bid-intel__strategy-item { display: flex; align-items: flex-start; gap: var(--space-2); font-size: var(--font-size-xs); color: var(--color-text-secondary); }
+.bid-intel__strategy-tag { font-size: 10px; font-weight: var(--font-weight-bold); text-transform: uppercase; padding: 2px 6px; border-radius: 4px; flex-shrink: 0; }
+.bid-intel__strategy-tag--conservative { background: rgba(59,130,246,0.15); color: #60a5fa; }
+.bid-intel__strategy-tag--balanced { background: rgba(16,185,129,0.15); color: #34d399; }
+.bid-intel__strategy-tag--aggressive { background: rgba(245,158,11,0.15); color: #fbbf24; }
+
+.bid-intel__comp-item { display: flex; align-items: center; gap: var(--space-2); padding: var(--space-2) var(--space-3); background: rgba(255,255,255,0.03); border-radius: var(--radius-md); font-size: var(--font-size-xs); }
+.bid-intel__comp-name { flex: 1; color: var(--color-text-secondary); }
+.bid-intel__comp-cost { font-weight: var(--font-weight-semibold); color: var(--color-text-primary); }
+.bid-intel__comp-match { font-size: 10px; color: var(--color-primary-light); background: var(--color-primary-bg); padding: 2px 6px; border-radius: 4px; }
+
+.bid-intel__factor { display: flex; align-items: center; gap: var(--space-2); font-size: var(--font-size-xs); color: var(--color-text-secondary); }
+.bid-intel__factor svg { color: var(--color-primary-light); flex-shrink: 0; }
+
+.bid-intel__insight-card { display: flex; align-items: flex-start; gap: var(--space-2); padding: var(--space-3); background: linear-gradient(135deg, rgba(59,130,246,0.06), rgba(16,185,129,0.06)); border: 1px solid rgba(59,130,246,0.15); border-radius: var(--radius-lg); font-size: var(--font-size-xs); color: var(--color-text-secondary); }
+.bid-intel__insight-card svg { color: #3b82f6; flex-shrink: 0; margin-top: 1px; }
+
+.bid-intel__risk { display: flex; align-items: flex-start; gap: var(--space-2); font-size: var(--font-size-xs); color: var(--color-warning); }
+.bid-intel__risk svg { flex-shrink: 0; margin-top: 1px; }
+
+.bid-intel__refresh { align-self: center; margin-top: var(--space-2); }

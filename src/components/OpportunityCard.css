@@ -1,0 +1,54 @@
+.opp-card {
+  padding: var(--space-5) var(--space-6);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  position: relative;
+  border-left: 3px solid transparent;
+  transition: border-color var(--transition-base), background var(--transition-base);
+}
+
+.opp-card:hover {
+  border-left-color: var(--color-primary);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.opp-card__header { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-3); }
+.opp-card__badges { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+
+.opp-card__save {
+  display: flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; min-width: 34px;
+  border-radius: var(--radius-lg); color: var(--color-text-tertiary);
+  transition: all var(--transition-base);
+}
+.opp-card__save:hover { background: var(--color-primary-bg); color: var(--color-primary-light); transform: scale(1.08); }
+.opp-card__save--active { color: var(--color-primary-light); }
+
+.opp-card__title { font-size: var(--font-size-base); font-weight: var(--font-weight-semibold); color: var(--color-text-primary); line-height: var(--line-height-tight); letter-spacing: -0.015em; }
+.opp-card__meta { display: flex; flex-direction: column; gap: 5px; }
+.opp-card__meta-item { display: flex; align-items: center; gap: var(--space-2); font-size: var(--font-size-xs); color: var(--color-text-tertiary); }
+.opp-card__meta-item svg { color: var(--color-text-tertiary); flex-shrink: 0; opacity: 0.6; }
+.opp-card__summary { font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed); }
+
+.opp-card__footer { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); padding-top: var(--space-1); }
+.opp-card__tags { display: flex; gap: 6px; flex-wrap: wrap; }
+
+.opp-card__tag { font-size: 10.5px; font-weight: var(--font-weight-medium); padding: 3px 9px; border-radius: var(--radius-sm); }
+.opp-card__tag--permit { background: var(--color-blue-50); color: var(--color-blue-400); }
+.opp-card__tag--stage { background: rgba(255, 255, 255, 0.04); color: var(--color-text-secondary); }
+
+.opp-card__contractors { display: flex; gap: 5px; flex-wrap: wrap; }
+.opp-card__contractor-chip {
+  font-size: 10px; font-weight: var(--font-weight-semibold);
+  padding: 2px 8px; border-radius: var(--radius-full);
+  background: color-mix(in srgb, var(--chip-color, #3b82f6) 12%, transparent);
+  color: var(--chip-color, #60a5fa);
+}
+
+.opp-card__risks {
+  display: flex; align-items: center; gap: 5px;
+  font-size: 10.5px; color: var(--color-warning); font-weight: var(--font-weight-medium);
+  padding: 4px 8px; background: var(--color-warning-light); border-radius: var(--radius-sm);
+}

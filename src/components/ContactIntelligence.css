@@ -1,0 +1,58 @@
+.contact-intel__empty { display: flex; flex-direction: column; align-items: center; gap: var(--space-3); padding: var(--space-8) var(--space-4); text-align: center; }
+.contact-intel__empty-icon { width: 56px; height: 56px; border-radius: var(--radius-xl); background: linear-gradient(135deg, rgba(99,102,241,0.15), rgba(168,85,247,0.15)); display: flex; align-items: center; justify-content: center; color: #818cf8; }
+.contact-intel__empty h4 { font-size: var(--font-size-base); font-weight: var(--font-weight-semibold); color: var(--color-text-primary); margin: 0; }
+.contact-intel__empty p { font-size: var(--font-size-sm); color: var(--color-text-tertiary); max-width: 300px; line-height: var(--line-height-relaxed); }
+.contact-intel__powered { font-size: 11px; color: var(--color-text-tertiary); margin-top: var(--space-2); opacity: 0.6; }
+
+.contact-intel__loading { display: flex; flex-direction: column; align-items: center; gap: var(--space-3); padding: var(--space-8) var(--space-4); text-align: center; }
+.contact-intel__spinner { animation: spin 1s linear infinite; color: #818cf8; }
+.contact-intel__loading p { font-size: var(--font-size-sm); color: var(--color-text-secondary); }
+.contact-intel__loading-steps { display: flex; flex-direction: column; gap: var(--space-1); }
+.contact-intel__loading-steps span { font-size: 12px; color: var(--color-text-tertiary); }
+
+.contact-intel__error { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-6); color: var(--color-warning); text-align: center; }
+.contact-intel__error p { font-size: var(--font-size-sm); }
+
+.contact-intel { display: flex; flex-direction: column; gap: var(--space-4); }
+
+.contact-intel__status-badge { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-2) var(--space-3); border-radius: var(--radius-full); background: color-mix(in srgb, var(--status-color) 12%, transparent); color: var(--status-color); font-size: var(--font-size-xs); font-weight: var(--font-weight-semibold); align-self: flex-start; }
+.contact-intel__conf-score { margin-left: var(--space-1); opacity: 0.7; }
+
+.contact-intel__card { display: flex; gap: var(--space-3); padding: var(--space-4); background: rgba(255,255,255,0.03); border: 1px solid var(--glass-border); border-radius: var(--radius-xl); }
+.contact-intel__avatar { width: 48px; height: 48px; border-radius: var(--radius-full); background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(168,85,247,0.2)); display: flex; align-items: center; justify-content: center; color: #a78bfa; flex-shrink: 0; }
+.contact-intel__card-body { display: flex; flex-direction: column; gap: 2px; }
+.contact-intel__name { font-size: var(--font-size-base); font-weight: var(--font-weight-semibold); color: var(--color-text-primary); }
+.contact-intel__role { font-size: var(--font-size-xs); color: var(--color-text-tertiary); }
+
+.contact-intel__details { display: flex; flex-direction: column; gap: var(--space-2); }
+.contact-intel__detail-row { display: flex; align-items: center; gap: var(--space-2); font-size: var(--font-size-sm); color: var(--color-text-secondary); padding: var(--space-2) 0; }
+.contact-intel__detail-row svg { color: var(--color-text-tertiary); flex-shrink: 0; }
+.contact-intel__detail-row--link { color: var(--color-primary-light); cursor: pointer; transition: color var(--transition-fast); text-decoration: none; }
+.contact-intel__detail-row--link:hover { color: #60a5fa; }
+
+.contact-intel__relevance { display: flex; align-items: flex-start; gap: var(--space-2); padding: var(--space-3); background: linear-gradient(135deg, rgba(99,102,241,0.06), rgba(168,85,247,0.06)); border: 1px solid rgba(99,102,241,0.15); border-radius: var(--radius-lg); font-size: var(--font-size-xs); color: var(--color-text-secondary); line-height: var(--line-height-relaxed); }
+.contact-intel__relevance svg { color: #818cf8; flex-shrink: 0; margin-top: 2px; }
+
+.contact-intel__section { display: flex; flex-direction: column; gap: var(--space-2); }
+.contact-intel__section-title { font-size: var(--font-size-sm); font-weight: var(--font-weight-semibold); color: var(--color-text-primary); display: flex; align-items: center; gap: var(--space-2); }
+.contact-intel__source-note { display: flex; align-items: center; gap: var(--space-2); font-size: var(--font-size-xs); color: var(--color-text-secondary); }
+.contact-intel__source-note svg { color: var(--color-primary-light); flex-shrink: 0; }
+
+.contact-intel__alt-contact { display: flex; align-items: center; gap: var(--space-3); padding: var(--space-2) var(--space-3); background: rgba(255,255,255,0.03); border-radius: var(--radius-md); }
+.contact-intel__alt-info { flex: 1; display: flex; flex-direction: column; gap: 1px; }
+.contact-intel__alt-name { font-size: var(--font-size-sm); color: var(--color-text-primary); font-weight: var(--font-weight-medium); }
+.contact-intel__alt-role { font-size: 11px; color: var(--color-text-tertiary); }
+.contact-intel__alt-conf { font-size: var(--font-size-xs); font-weight: var(--font-weight-bold); color: var(--color-text-tertiary); }
+
+.contact-intel__refresh { align-self: center; margin-top: var(--space-2); }
+
+/* AI Email Drafter */
+.contact-intel__drafter { margin-top: var(--space-4); margin-bottom: var(--space-2); display: flex; flex-direction: column; gap: var(--space-2); }
+.contact-intel__draft-loading { display: flex; align-items: center; justify-content: center; gap: var(--space-2); padding: var(--space-4); background: rgba(99,102,241,0.05); border-radius: var(--radius-lg); border: 1px dashed rgba(99,102,241,0.3); color: #818cf8; font-size: var(--font-size-sm); }
+.contact-intel__draft-box { display: flex; flex-direction: column; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--glass-border); background: rgba(0,0,0,0.2); }
+.contact-intel__draft-header { display: flex; align-items: center; justify-content: space-between; padding: var(--space-2) var(--space-3); background: rgba(255,255,255,0.05); border-bottom: 1px solid var(--glass-border); }
+.contact-intel__draft-title { display: flex; align-items: center; gap: var(--space-2); font-size: var(--font-size-xs); font-weight: var(--font-weight-semibold); color: #818cf8; }
+.contact-intel__draft-copy { display: flex; align-items: center; gap: var(--space-1); font-size: 11px; color: var(--color-text-secondary); background: none; border: none; cursor: pointer; padding: 2px 6px; border-radius: var(--radius-sm); transition: all 0.2s; }
+.contact-intel__draft-copy:hover { color: var(--color-text-primary); background: rgba(255,255,255,0.1); }
+.contact-intel__draft-textarea { width: 100%; border: none; background: transparent; padding: var(--space-3); font-size: var(--font-size-sm); color: var(--color-text-primary); line-height: 1.5; resize: none; font-family: inherit; }
+.contact-intel__draft-textarea:focus { outline: none; }
